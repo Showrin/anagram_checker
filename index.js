@@ -11,3 +11,5 @@ const anagramChecker = (str1, str2) => {
 
   return true;
 };
+
+module.exports = anagramChecker;
