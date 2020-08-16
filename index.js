@@ -11,7 +11,3 @@ const anagramChecker = (str1, str2) => {
 
   return true;
 };
-
-console.log(
-  anagramChecker("McDonald's restaurants", "Uncle Sam's standard rot")
-);
