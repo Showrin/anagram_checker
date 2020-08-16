@@ -1,0 +1,25 @@
+{
+  "name": "anagram_checker",
+  "version": "1.0.0",
+  "description": "A simple program to check whether two strings are anagram or not.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Showrin/anagram_checker.git"
+  },
+  "keywords": [
+    "anagram_checker",
+    "anagram",
+    "test",
+    "Javascript"
+  ],
+  "author": "Showrin Barua <showrinece15@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Showrin/anagram_checker/issues"
+  },
+  "homepage": "https://github.com/Showrin/anagram_checker#readme"
+}
