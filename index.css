@@ -34,16 +34,22 @@ body {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16);
   display: flex;
   flex-flow: row wrap;
-  height: 500px;
+  height: auto;
   justify-content: center;
   left: 50%;
   max-height: 90%;
   max-width: 90%;
-  padding: 20px;
+  padding: 50px 20px;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 600px;
+}
+
+.anagram-checker__title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 50px;
 }
 
 .anagram-checker__input {
@@ -89,7 +95,7 @@ body {
   font-family: monospace;
   font-size: 1.25rem;
   font-weight: 600;
-  margin-top: 20px;
+  margin-top: 40px;
   padding: 10px;
   transition: background-color 0.2s ease, color 0.2s ease;
   width: 60%;
