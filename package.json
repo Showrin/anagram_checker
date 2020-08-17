@@ -4,7 +4,7 @@
   "description": "A simple program to check whether two strings are anagram or not.",
   "main": "index.js",
   "scripts": {
-    "test": "node ./test/index.test.js"
+    "test": "node ./test/anagram_checker.test.js"
   },
   "repository": {
     "type": "git",

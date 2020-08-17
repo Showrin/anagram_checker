@@ -1,5 +1,5 @@
 const test = require("./testingLibrary");
-const anagramChecker = require("../index");
+const anagramChecker = require("../modules/anagramChecker");
 
 test("Should be anagram", anagramChecker("bleat", "table"), true);
 
