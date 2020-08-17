@@ -16,6 +16,13 @@ body {
   margin: 0;
 }
 
+@media only screen and (max-width: 480px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+
 body * {
   box-sizing: border-box;
 }
@@ -49,7 +56,10 @@ body {
 .anagram-checker__title {
   font-size: 3rem;
   font-weight: 600;
+  line-height: 1.5;
   margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
 }
 
 .anagram-checker__input {
