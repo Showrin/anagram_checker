@@ -4,6 +4,15 @@ const form = document.getElementById("js-form");
 const stringInput1 = document.getElementById("js-str1");
 const stringInput2 = document.getElementById("js-str2");
 const output = document.getElementById("js-output");
+const successTextClass = "anagram-checker__output--success";
+const failureTextClass = "anagram-checker__output--danger";
+
+const addAndRemoveClasses = (element, classToAdd, classToRemove) => {
+  element.classList.remove(classToRemove);
+  element.classList.add(classToAdd);
+
+  return null;
+};
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -13,15 +22,19 @@ form.addEventListener("submit", (event) => {
 
   if (anagramChecker(string1, string2)) {
     if (string1 === "" || string2 === "") {
-      output.innerText = "As both strings are empty, they are anagram";
+      addAndRemoveClasses(output, successTextClass, failureTextClass);
+      output.innerHTML = "As both strings are empty, they are anagram";
     } else {
-      output.innerText = `"${string1}" and "${string2}" are anagram`;
+      addAndRemoveClasses(output, successTextClass, failureTextClass);
+      output.innerHTML = `"${string1}" and "${string2}" are anagram`;
     }
   } else {
     if (string1 === "" || string2 === "") {
-      output.innerText = "As one string is empty, they are not anagram";
+      addAndRemoveClasses(output, failureTextClass, successTextClass);
+      output.innerHTML = "As one string is empty, they are not anagram";
     } else {
-      output.innerText = `"${string1}" and "${string2}" are not anagram`;
+      addAndRemoveClasses(output, failureTextClass, successTextClass);
+      output.innerHTML = `"${string1}" and "${string2}" are not anagram`;
     }
   }
 });
