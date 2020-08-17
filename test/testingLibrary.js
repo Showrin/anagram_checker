@@ -1,4 +1,4 @@
-const chalk = require("chalk");
+import chalk from "chalk";
 
 const test = (testDescription, testFunction, expectedValue) => {
   const receivedValue = testFunction;
@@ -16,4 +16,4 @@ const test = (testDescription, testFunction, expectedValue) => {
   return null;
 };
 
-module.exports = test;
+export default test;
