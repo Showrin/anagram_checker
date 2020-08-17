@@ -1,4 +1,4 @@
-import { anagramChecker } from "./modules/anagramChecker.js";
+import anagramChecker from "./modules/anagramChecker.js";
 
 const form = document.getElementById("js-form");
 const stringInput1 = document.getElementById("js-str1");
