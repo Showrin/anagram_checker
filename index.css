@@ -2,9 +2,9 @@
   --bg-color: #121212;
   --danger-color: #ff5f56;
   --form-bg-color: #263238;
+  --gray-color: #566065;
+  --light-gray-color: #e9eded;
   --success-color: #27c93f;
-  --text-color: #e9eded;
-  --text-light-color: #566065;
 }
 
 html,
@@ -22,7 +22,7 @@ body * {
 
 body {
   background-color: var(--bg-color);
-  color: var(--text-color);
+  color: var(--light-gray-color);
   position: relative;
 }
 
@@ -60,7 +60,7 @@ body {
 }
 
 .anagram-checker__input::before {
-  color: var(--text-color);
+  color: var(--light-gray-color);
   content: "$>";
   display: block;
   font-family: monospace;
@@ -73,7 +73,7 @@ body {
 .anagram-checker__input > input {
   background-color: transparent;
   border: none;
-  color: var(--text-color);
+  color: var(--light-gray-color);
   display: block;
   font-family: monospace;
   font-size: 1.5rem;
@@ -83,14 +83,14 @@ body {
 }
 
 .anagram-checker__input > input::placeholder {
-  color: var(--text-light-color);
+  color: var(--gray-color);
 }
 
 .anagram-checker__button {
   background-color: transparent;
   border-radius: 5px;
-  border: 2px solid var(--text-color);
-  color: var(--text-color);
+  border: 2px solid var(--light-gray-color);
+  color: var(--light-gray-color);
   cursor: pointer;
   font-family: monospace;
   font-size: 1.25rem;
@@ -102,7 +102,7 @@ body {
 }
 
 .anagram-checker__button:hover {
-  background-color: var(--text-color);
+  background-color: var(--light-gray-color);
   color: var(--form-bg-color);
 }
 
@@ -111,7 +111,7 @@ body {
 }
 
 .anagram-checker__button:active {
-  border: 2px solid var(--text-color);
+  border: 2px solid var(--light-gray-color);
 }
 
 .anagram-checker__output {
