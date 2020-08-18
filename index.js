@@ -39,4 +39,6 @@ form.addEventListener("submit", (event) => {
   }
 });
 
+stringInput1.focus();
+
 export default null;
