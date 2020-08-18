@@ -1,0 +1,144 @@
+:root {
+  --bg-color: #121212;
+  --danger-color: #ff5f56;
+  --form-bg-color: #263238;
+  --gray-color: #566065;
+  --light-gray-color: #e9eded;
+  --success-color: #27c93f;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  font-family: monospace;
+  font-size: 16px;
+  height: 100%;
+  margin: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--light-gray-color);
+  position: relative;
+}
+
+.anagram-checker {
+  align-content: center;
+  align-items: center;
+  background-color: var(--form-bg-color);
+  border-radius: 5px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16);
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+  justify-content: center;
+  left: 50%;
+  max-height: 90%;
+  max-width: 90%;
+  padding: 50px 20px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+}
+
+.anagram-checker__title {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+.anagram-checker__input {
+  display: flex;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.anagram-checker__input::before {
+  color: var(--light-gray-color);
+  content: "$>";
+  display: block;
+  font-family: monospace;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  padding: 15px;
+}
+
+.anagram-checker__input > input {
+  background-color: transparent;
+  border: none;
+  color: var(--light-gray-color);
+  display: block;
+  font-family: monospace;
+  font-size: 1.5rem;
+  outline: transparent;
+  padding: 15px 15px 15px 0;
+  width: 100%;
+}
+
+.anagram-checker__input > input::placeholder {
+  color: var(--gray-color);
+}
+
+.anagram-checker__button {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid var(--light-gray-color);
+  color: var(--light-gray-color);
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 40px;
+  padding: 10px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  width: 60%;
+}
+
+.anagram-checker__button:hover {
+  background-color: var(--light-gray-color);
+  color: var(--form-bg-color);
+}
+
+.anagram-checker__button:focus {
+  outline: transparent;
+}
+
+.anagram-checker__button:active {
+  border: 2px solid var(--light-gray-color);
+}
+
+.anagram-checker__output {
+  display: block;
+  font-size: 1.25rem;
+  height: auto;
+  line-height: 1.5;
+  margin-top: 40px;
+  min-height: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.anagram-checker__output--danger {
+  color: var(--danger-color);
+}
+
+.anagram-checker__output--success {
+  color: var(--success-color);
+}

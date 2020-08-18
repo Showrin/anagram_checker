@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "A simple program to check whether two strings are anagram or not.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "node ./test/index.test.js"
+    "test": "node --experimental-modules ./test/anagram_checker.test.js"
   },
   "repository": {
     "type": "git",
