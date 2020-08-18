@@ -39,3 +39,13 @@ $ npm install
 Now open the **`index.html`** file with any browser and you will get the following UI. Here you can give to string and pressing enter or pressing the button, you can check whether the given strings are anagram or not.
 
 ![Image](https://i.imgur.com/ryHRyGD.png)
+
+## Dev Dependencies
+
+This program has following development dependencies.
+
+| Module Name      | Version | Why it's used                                                              |
+| ---------------- | ------- | -------------------------------------------------------------------------- |
+| babel-cli        | ^6.26.0 | It's being used for using ES6 import-export in node                        |
+| babel-preset-env | ^1.7.0  | It's being used for using ES6 import-export in node                        |
+| chalk            | ^4.1.0  | It's being used for making test completion texts colorfull in the terminal |
