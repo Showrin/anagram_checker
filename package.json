@@ -25,5 +25,9 @@
   "homepage": "https://epic-curran-723523.netlify.app/",
   "dependencies": {
     "chalk": "^4.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
   }
 }
