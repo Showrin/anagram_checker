@@ -122,3 +122,11 @@ Or use the following if you are using npm.
 ```
 npm test
 ```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+And your changes will be visible [https://epic-curran-723523.netlify.app/](https://epic-curran-723523.netlify.app/) here after getting merged into the master.
