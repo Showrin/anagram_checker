@@ -88,3 +88,37 @@ test(
 If your test fails, you will get the description with **red color** and with **the received** and **expected** value. Otherwise you will get the description with **green color**.
 
 ![Test Result](https://i.imgur.com/lxWKN7t.png)
+
+## Write and Run Tests
+
+You can add your tests in **`./test/anagram_checker.test.js`** this file like the following:
+
+```
+test(
+  "Should not be anagram when there is an empty string",
+  anagramChecker("lamp", ""),
+  false
+);
+
+test(
+  "Should be anagram despite two strings are empty",
+  anagramChecker("", ""),
+  true
+);
+```
+
+<br/>
+
+After that you can run tests using this command in the console.
+
+```
+yarn test
+```
+
+<br/>
+
+Or use the following if you are using npm.
+
+```
+npm test
+```
