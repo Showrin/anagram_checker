@@ -36,7 +36,7 @@ $ npm install
 
 <br/>
 
-Now open the **`index.html`** file with any browser and you will get the following UI. Here you can give to string and pressing enter or pressing the button, you can check whether the given strings are anagram or not.
+Now open the **`index.html`** file with any browser and you will get the following UI. Here you can give two strings and pressing enter or pressing the button, you can check whether the given strings are anagram or not.
 
 ![Anagram Checker UI](https://i.imgur.com/ryHRyGD.png)
 
@@ -48,20 +48,20 @@ This program has following development dependencies.
 | ---------------- | ------- | -------------------------------------------------------------------------- |
 | babel-cli        | ^6.26.0 | It's being used for using ES6 import-export in node                        |
 | babel-preset-env | ^1.7.0  | It's being used for using ES6 import-export in node                        |
-| chalk            | ^4.1.0  | It's being used for making test completion texts colorfull in the terminal |
+| chalk            | ^4.1.0  | It's being used for making test-completion texts colorfull in the terminal |
 
 ## Algorithm Explanation
 
 - First convert all charaters to lowercase.
-- Then remove all the space characters. (To do so, split strings by the space characters and join them. Now all the spaces have gone)
+- Then remove all the space characters. (To do so, split strings by the space characters and join them. Now all the spaces have gone.)
 
-- After that sort both of the strings
-- Then compare these two sorted strings
-- If they are anagram, they will be equal otherwise not anagram
+- After that sort both strings.
+- Then compare these two sorted strings.
+- If they are anagram, they must be equal otherwise they are not anagram.
 
 ## test( _testDescription, testFunction, expectedValue_ )
 
-It doesn't return anything. But it is responsible for checking whether a test case passes or fails and prints the test result in the console. It compares the return value of the `testFunction` and `expectedValue`. If both values are same, it will print the `testDescription` in the console with success color and indicator, Otherwise it will print the `testDescription` in the console with failure color and indicator.
+It doesn't return anything. But it's responsible for checking whether a test case passes or not and prints the test result in the console. It compares the return value of the `testFunction` and `expectedValue`. If both values are same, it will print the `testDescription` in the console with success color and indicator, Otherwise it will print the `testDescription` in the console with failure color and indicator.
 
 #### Arguments
 
