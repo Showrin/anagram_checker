@@ -66,10 +66,10 @@ Now open the **`index.html`** file with any browser and you will get the followi
 
 This program has following development dependencies.
 
-| Module Name                              | Version                                  | Why it's used                                       |
-| ---------------------------------------- | ---------------------------------------- | --------------------------------------------------- |
-| @babel/plugin-transform-modules-commonjs | @babel/plugin-transform-modules-commonjs | It's being used for using ES6 import-export in node |
-| jest                                     | ^26.4.1                                  | It's being used for writing and running tests       |
+| Module Name                              | Version | Why it's used                                       |
+| ---------------------------------------- | ------- | --------------------------------------------------- |
+| @babel/plugin-transform-modules-commonjs | ^7.10.4 | It's being used for using ES6 import-export in node |
+| jest                                     | ^26.4.1 | It's being used for writing and running tests       |
 
 <br/>
 
