@@ -4,7 +4,7 @@ It's a simple program to check whether two strings are anagram or not.
 
 <br/>
 
-# Installation
+## Installation
 
 Run the following command to install this package in your package.
 
