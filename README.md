@@ -66,11 +66,10 @@ Now open the **`index.html`** file with any browser and you will get the followi
 
 This program has following development dependencies.
 
-| Module Name      | Version | Why it's used                                                              |
-| ---------------- | ------- | -------------------------------------------------------------------------- |
-| babel-cli        | ^6.26.0 | It's being used for using ES6 import-export in node                        |
-| babel-preset-env | ^1.7.0  | It's being used for using ES6 import-export in node                        |
-| chalk            | ^4.1.0  | It's being used for making test-completion texts colorfull in the terminal |
+| Module Name                              | Version                                  | Why it's used                                       |
+| ---------------------------------------- | ---------------------------------------- | --------------------------------------------------- |
+| @babel/plugin-transform-modules-commonjs | @babel/plugin-transform-modules-commonjs | It's being used for using ES6 import-export in node |
+| jest                                     | ^26.4.1                                  | It's being used for writing and running tests       |
 
 <br/>
 
@@ -85,54 +84,18 @@ This program has following development dependencies.
 
 <br/>
 
-## test( _testDescription, testFunction, expectedValue_ )
-
-It doesn't return anything. But it's responsible for checking whether a test case passes or not and prints the test result in the console. It compares the return value of the `testFunction` and `expectedValue`. If both values are same, it will print the `testDescription` in the console with success color and indicator, Otherwise it will print the `testDescription` in the console with failure color and indicator.
-
-#### Arguments
-
-1. **`testDescription`** `(string)`: String that defines what a test is going to do.
-2. **`testFunction`** `(function)`: Function where we write our test.
-3. **`expectedValue`** `(any)`: Value that is matched with the return value of `testFunction`.
-
-#### Returns
-
-**`null`** : It returns a null object.
-
-#### Example
-
-```
-test(
-  "Should not be anagram when there is an empty string",
-  anagramChecker("lamp", ""),
-  false
-);
-```
-
-#### Output
-
-If your test fails, you will get the description with **red color** and with **the received** and **expected** value. Otherwise you will get the description with **green color**.
-
-![Test Result](https://i.imgur.com/lxWKN7t.png)
-
-<br/>
-
 ## Write and Run Tests
 
-You can add your tests in **`./test/anagram_checker.test.js`** this file like the following:
+You can add your tests in **`./modules/anagram_checker.test.js`** this file like the following:
 
 ```
-test(
-  "Should not be anagram when there is an empty string",
-  anagramChecker("lamp", ""),
-  false
-);
+test("Should not be anagram", () => {
+  expect(anagramChecker("eat", "tar")).toBe(false);
+});
 
-test(
-  "Should be anagram despite two strings are empty",
-  anagramChecker("", ""),
-  true
-);
+test("Should not be anagram when there is an empty string", () => {
+  expect(anagramChecker("lamp", "")).toBe(false);
+});
 ```
 
 <br/>
