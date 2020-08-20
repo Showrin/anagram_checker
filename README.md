@@ -2,6 +2,26 @@
 
 It's a simple program to check whether two strings are anagram or not.
 
+<br/>
+
+# Installation
+
+Run the following command to install this package in your package.
+
+```
+yarn add @showrin/anagram_checker
+```
+
+<br/>
+
+If you are using npm, then run the following command.
+
+```
+npm install @showrin/anagram_checker
+```
+
+<br/>
+
 ## Project Setup
 
 Clone the repo first. To do so, go to the directory where you want to keep this repo. Then open the terminal from here and run the following command.
@@ -40,6 +60,8 @@ Now open the **`index.html`** file with any browser and you will get the followi
 
 ![Anagram Checker UI](https://i.imgur.com/ryHRyGD.png)
 
+<br/>
+
 ## Dev Dependencies
 
 This program has following development dependencies.
@@ -50,6 +72,8 @@ This program has following development dependencies.
 | babel-preset-env | ^1.7.0  | It's being used for using ES6 import-export in node                        |
 | chalk            | ^4.1.0  | It's being used for making test-completion texts colorfull in the terminal |
 
+<br/>
+
 ## Algorithm Explanation
 
 - First convert all charaters to lowercase.
@@ -58,6 +82,8 @@ This program has following development dependencies.
 - After that sort both strings.
 - Then compare these two sorted strings.
 - If they are anagram, they must be equal otherwise they are not anagram.
+
+<br/>
 
 ## test( _testDescription, testFunction, expectedValue_ )
 
@@ -88,6 +114,8 @@ test(
 If your test fails, you will get the description with **red color** and with **the received** and **expected** value. Otherwise you will get the description with **green color**.
 
 ![Test Result](https://i.imgur.com/lxWKN7t.png)
+
+<br/>
 
 ## Write and Run Tests
 
@@ -123,6 +151,8 @@ Or use the following if you are using npm.
 npm test
 ```
 
+<br/>
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
@@ -130,6 +160,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 And your changes will be visible [https://epic-curran-723523.netlify.app/](https://epic-curran-723523.netlify.app/) here after getting merged into the master.
+
+<br/>
 
 ## License
 
