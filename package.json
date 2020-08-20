@@ -1,8 +1,8 @@
 {
-  "name": "anagram_checker",
+  "name": "@showrin/anagram_checker",
   "version": "1.0.0",
   "description": "A simple program to check whether two strings are anagram or not.",
-  "main": "index.js",
+  "main": "modules/anagramChecker.js",
   "type": "module",
   "scripts": {
     "test": "babel-node ./test/anagram_checker.test.js"
