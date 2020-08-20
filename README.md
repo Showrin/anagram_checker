@@ -66,11 +66,10 @@ Now open the **`index.html`** file with any browser and you will get the followi
 
 This program has following development dependencies.
 
-| Module Name      | Version | Why it's used                                                              |
-| ---------------- | ------- | -------------------------------------------------------------------------- |
-| babel-cli        | ^6.26.0 | It's being used for using ES6 import-export in node                        |
-| babel-preset-env | ^1.7.0  | It's being used for using ES6 import-export in node                        |
-| chalk            | ^4.1.0  | It's being used for making test-completion texts colorfull in the terminal |
+| Module Name                              | Version                                  | Why it's used                                       |
+| ---------------------------------------- | ---------------------------------------- | --------------------------------------------------- |
+| @babel/plugin-transform-modules-commonjs | @babel/plugin-transform-modules-commonjs | It's being used for using ES6 import-export in node |
+| jest                                     | ^26.4.1                                  | It's being used for writing and running tests       |
 
 <br/>
 
