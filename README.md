@@ -22,6 +22,12 @@ npm install @showrin/anagram_checker
 
 <br/>
 
+## Demo
+
+Go to the link: [https://epic-curran-723523.netlify.app/](https://epic-curran-723523.netlify.app/)
+
+<br/>
+
 ## Project Setup
 
 Clone the repo first. To do so, go to the directory where you want to keep this repo. Then open the terminal from here and run the following command.
