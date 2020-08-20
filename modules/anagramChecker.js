@@ -5,11 +5,7 @@ const anagramChecker = (str1, str2) => {
   const sortedStr1 = str1WithoutSpaceCharacter.split("").sort().join("");
   const sortedStr2 = str2WithoutSpaceCharacter.split("").sort().join("");
 
-  if (sortedStr1 !== sortedStr2) {
-    return false;
-  }
-
-  return true;
+  return sortedStr1 === sortedStr2;
 };
 
 export default anagramChecker;
