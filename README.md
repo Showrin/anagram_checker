@@ -86,20 +86,16 @@ This program has following development dependencies.
 
 ## Write and Run Tests
 
-You can add your tests in **`./test/anagram_checker.test.js`** this file like the following:
+You can add your tests in **`./modules/anagram_checker.test.js`** this file like the following:
 
 ```
-test(
-  "Should not be anagram when there is an empty string",
-  anagramChecker("lamp", ""),
-  false
-);
+test("Should not be anagram", () => {
+  expect(anagramChecker("eat", "tar")).toBe(false);
+});
 
-test(
-  "Should be anagram despite two strings are empty",
-  anagramChecker("", ""),
-  true
-);
+test("Should not be anagram when there is an empty string", () => {
+  expect(anagramChecker("lamp", "")).toBe(false);
+});
 ```
 
 <br/>
