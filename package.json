@@ -4,6 +4,9 @@
   "description": "A simple program to check whether two strings are anagram or not.",
   "main": "modules/anagramChecker.js",
   "type": "module",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "test": "babel-node ./test/anagram_checker.test.js"
   },
