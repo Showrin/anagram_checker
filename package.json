@@ -1,6 +1,6 @@
 {
   "name": "@showrin/anagram_checker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple program to check whether two strings are anagram or not.",
   "main": "modules/anagramChecker.js",
   "type": "module",
