@@ -28,10 +28,10 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org/
       - run: npm install && npm ci
-      - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.PUBLISH_NPM_TOKEN }}" > ~/.npmrc
+      - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.PUBLISH_NPM_TOKEN }}" > .npmrc
       - run: npm publish --access public
         env:
-          PUBLISH_NPM_TOKEN: ${{secrets.PUBLISH_GITHUB_TOKEN}}
+          PUBLISH_NPM_TOKEN: ${{secrets.PUBLISH_NPM_TOKEN}}
 
   publish-gpr:
     needs: build
